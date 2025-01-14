@@ -1,0 +1,10 @@
+productController:
+    get products
+    add a products
+    get one product
+    rate product
+    find product
+
+ordersController:
+cartController:
+userController:
