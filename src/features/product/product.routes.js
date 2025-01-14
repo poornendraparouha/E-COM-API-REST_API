@@ -9,8 +9,8 @@ const productController = new ProductController();
 
 // all the paths to controller methods
 ProductRouter.get('/', productController.getAllProducts) ;
-ProductRouter.post('/', productController.AddProduct) ;
-ProductRouter.get('/', productController.getOneProduct) ;
+ProductRouter.post('/', productController.AddProduct);
+ProductRouter.get('/', productController.getOneProduct);
 ProductRouter.post('/', productController.rateProduct) ;
 ProductRouter.get('/', productController.filterProduct) ;
 
