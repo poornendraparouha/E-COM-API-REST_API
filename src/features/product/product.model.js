@@ -11,6 +11,13 @@ export default class ProductModal {
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
     }
+
+    static add(product){
+            product.id = products.length + 1;
+        products.push(product);
+        return product;
+    }
+
     static getAll(){
         return products;
     }
@@ -38,3 +45,5 @@ var products = [
 
     new ProductModal(5, 'Hat', 'Stylish summer hat', 14.99, 'hat.jpg', 'Accessories', ['One Size'], 200, new Date(), new Date())
 ]
+
+
