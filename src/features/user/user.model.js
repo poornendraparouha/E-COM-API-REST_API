@@ -7,7 +7,7 @@ export default class UserModel {
         this.type = type;
     }
 
-    static SignUp(name, email, password, type){
+    static signUp(name, email, password, type){
         const newUser = new UserModel(
             users.length + 1,
             name,
@@ -19,13 +19,17 @@ export default class UserModel {
         return newUser;
     }
    
-    static SignIn(email, password){
+    static signIn(email, password){
         const user = users.find((u)=> u.email === email && u.password === password);
         return user;
     }
+
+    static getAll(){
+        return users;
+    }
 }
 
-var users = [
+let users = [
     {
         id:1,
         name:"seller user",

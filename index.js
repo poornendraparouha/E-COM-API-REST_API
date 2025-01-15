@@ -2,6 +2,7 @@ import express from "express";
 import ProductRouter from "./src/features/product/product.routes.js";
 import UserRouter from "./src/features/user/user.routes.js";
 import bodyParser from "body-parser";
+import basicAuthorizer from "./src/middlewares/basicAuth.middleware.js";
 
 const app = express();
 
@@ -10,7 +11,7 @@ app.use(bodyParser.json())
 // app.use(express.json());
 
 // for all requests related to products ,redirected to product routes.
-app.use('/api/products', ProductRouter);
+app.use('/api/products',basicAuthorizer, ProductRouter);
 app.use('/api/users', UserRouter)
 
 
