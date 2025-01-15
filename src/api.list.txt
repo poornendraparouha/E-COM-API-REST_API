@@ -5,6 +5,13 @@ productController:
     rate product
     find product
 
-ordersController:
 cartController:
+    add items in cart
+    get items of cart
+    remove items from cart
+
+ordersController:
+
 userController:
+    signup- email password typeOfUser(cosomer, seller)
+    sign in (email, password)
