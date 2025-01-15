@@ -19,15 +19,20 @@ export default class ProductController {
         res.status(201).send(createdRecord)
     }
 
-    rateProduct(req, res){
-        
-    }
-
     getOneProduct(req, res){
-        
+        const id = req.params.id;
+        const product = ProductModal.get(id);
+        if(!product){
+            res.status(404).send("product not found")
+        }else{
+            return res.status(200).send(product);
+        }  
     }
 
     filterProduct(req, res){
+        
+    }
+    rateProduct(req, res){
         
     }
 }
