@@ -8,10 +8,11 @@ const ProductRouter = express.Router();
 const productController = new ProductController();
 
 // all the paths to controller methods
+ProductRouter.post('/rate', productController.rateProduct);
 ProductRouter.get('/filter', productController.filterProducts) ;
 ProductRouter.get('/', productController.getAllProducts) ;
 ProductRouter.post('/', upload.single('imageUrl'), productController.AddProduct);
 ProductRouter.get('/:id', productController.getOneProduct);
-ProductRouter.post('/', productController.rateProduct) ;
+
 
 export default ProductRouter;

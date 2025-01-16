@@ -36,5 +36,12 @@ let users = [
         email:"seller@gmail.com",
         password:"seller1",
         type: "seller"
+    },
+    {
+        id:2,
+        name:"Costomer User",
+        email:"costomer@gmail.com",
+        password:"costomer1",
+        type: "costomer"
     }
 ]

@@ -1,9 +1,9 @@
 productController:
-    get products
-    add a products
-    get one product
-    rate product
-    find product
+    get products - Done
+    add a  - Done
+    get one product - Done
+    rate product - Done
+    find product - Done
 
 cartController:
     add items in cart
@@ -13,5 +13,5 @@ cartController:
 ordersController:
 
 userController:
-    signup- email password typeOfUser(cosomer, seller)
-    sign in (email, password)
+    signup- email password typeOfUser(cosomer, seller) - Done
+    sign in (email, password) - Done
